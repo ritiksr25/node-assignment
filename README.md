@@ -22,5 +22,9 @@ API to create, update, delete, view users and also comment, view comment, etc.
 8. /api/v1/users/comment/:to/:by POST Create a comment (to: id of user on which (by: id of user who is commenting) comments)
 9. /api/v1/users/view-comments/:id GET View comments by a specific user.
 
+# Dummy data:
+There are two test users and a comment as dummy data.
+
 # Heroku Link: 
 https://nodeassignmentapi.herokuapp.com/api/v1
+
