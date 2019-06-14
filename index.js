@@ -18,6 +18,9 @@ const Comment = require('./models/Comment');
 app.use('/api/v1', require('./routes/api/v1/index'));
 app.use('/api/v1/users', require('./routes/api/v1/users'));
 
+app.get('/', (req, res) => res.status(200).json({ msg: 'Welcome to API Homepage, please go to /api/v1/ for API.'}))
+app.get('*', (req, res) => res.status(200).json({ msg: 'Route not found!!' }));
+
 //Setting up Server
 const PORT = process.env.PORT;
 app.listen(PORT, (err) => {
